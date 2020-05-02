@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            background-image: url("") ;
+            background-color: pink;
+        }
+        p {
+            
+            border: 5px solid rgb(62, 62, 66) ;
+            /*height: 20%;*/
+            width: 20%;
+            padding: 10px;
+            margin: 10px; 
+            color: hotpink;
+            background-color: ivory;
+            text-align: justify;
+            border-radius: 15%;
+            overflow:auto;
+            position: absolute;
+            top:50px;
+            left:10px;
+           
+        }
+        img {
+
+            float: left ;
+            width: 5em;
+            height: 5em;
+        }
+        img :hover{
+
+            
+            width: 10em;
+            height: 10em;
+        }
+
+        .tableau{
+            height: 80px;
+            width: 80px;
+
+        }
+        table{
+            float :right;
+            size: 100%;
+            position: absolute;
+            right: 10px;
+            top: 50px;
+            
+        }
+        table:{
+            float :right;
+            size: 100%;
+            position: absolute;
+            right: 10px;
+            top: 50px;
+            
+        }
+        .cellule{
+            border-color: red;
+            border : solid 5px;
+            height: 50px;
+            width: 200px;
+            text-align: center;
+        }
+        thead{
+            font-size: large;
+            background-color: rgb(219, 41, 41);
+            font-weight: bold;
+        }
+        .boutton1{
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+        .boutton2{
+            position: absolute;
+            right: 100px;
+            top: 0px;
+        }
+        .boutton2:hover{
+            background-color: blueviolet;
+            position: absolute;
+            right: 100px;
+            top: 0px;
+            font-weight: bold;
+            text-decoration-color: cornsilk;
+        }
+        .entete{
+            background-color: green;
+            border: solid green;
+            border-radius: 10px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 30px;
+        }
+        svg{
+            position: absolute;
+            left:40%;
+            right: 20%;
+            top: 80px;
+
+        }
+        #histo{
+            position: absolute;
+            top: 700px;
+            border: solid 3px;
+            border-color: chocolate;
+            /*rotate: 90;*/
+            height: 500px;
+            width: 500px;
+        }
+        #col1{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            height: 40%;
+            background-color: thistle;
+        }
+        #col2{
+            position: absolute;
+            bottom: 0px;
+            left: 20%;
+            height: 30%;
+            background-color: tomato;
+        }
+        #col3{
+            position: absolute;
+            bottom: 0px;
+            left: 40%;
+            height: 20%;
+            background-color: yellow;
+        }
+        #col4{
+            position: absolute;
+            bottom: 0px;
+            right: 20%;
+            height: 75%;
+            background-color: turquoise;
+        }
+        #col5{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            height: 11%;
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <div class="entete"><div class:"letitre">TITRE DU SITE</div><input class="boutton1" type="button" value="boutton2" name="bouton1"><input class="boutton2" type="button" value="boutton2" name="boutton2"></div>
+    <section>
+        <p>
+            <img src="image.png" alt="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quos eveniet magnam ab alias! Rerum ut libero non dignissimos necessitatibus minus deserunt, excepturi earum distinctio aspernatur vel modi magnam quia, eius et laudantium temporibus officia perspiciatis reiciendis voluptates. Quaerat id ad ex doloribus explicabo accusamus quas obcaecati iste doloremque magnam?
+        </p>
+        <div id="tableau">
+            <table border="5px">
+                <thead id="titre">
+                    <tr>
+                        <td><input type="checkbox" name="box" id="">
+                        </td>
+                        <td  > Tout Cocher</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td><input type="checkbox" name="box" id=""></td>
+                    <td> <div class="cellule">cell</div></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="box" id=""></td>
+                    <td><div class="cellule">cell</div></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="box" id=""></td>
+                    <td><div class="cellule">cell</div></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="box" id=""></td>
+                    <td><div class="cellule">cell</div></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="box" id=""></td>
+                    <td><div class="cellule">cell</div></td>
+                </tr>
+                
+            </table>
+        </div>
+    </section>
+    <svg width="300" height="200">
+        <rect width="100%" height="100%" fill="yellow" />
+    </svg>
+    
+<div id="histo">
+    <div id="col1">colonne 1</div>
+    <div id="col2">colonne 2</div>
+    <div id="col3">colonne 3</div>
+    <div id="col4">colonne 4</div>
+    <div id="col5">colonne 5</div>
+
+</div>
+    
+</body>
+</html>

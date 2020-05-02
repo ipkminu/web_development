@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD1</title>
+    <style>
+        .container{
+            padding: 2em;
+            border: 1px solid gray; 
+        }
+        .container p{
+            border: 1px solid green;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button onclick="toggle(this)">Masquer</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat rerum minima sapiente aliquid odio facere inventore, ex modi magnam, dolorum cum rem tenetur. Quae, impedit esse. Adipisci, sint pariatur? Quae cum impedit veritatis cumque, illum veniam quas? Tenetur, in modi!</p>
+    </div>
+    <script>
+        var p= document.querySelector('.container p');
+        function toggle(btn){
+            if(btn.innerHTML=="Masquer"){
+                btn.innerHTML="Afficher"
+                //p.style.display="";
+                p.setAttribute("hidden");
+            }
+            else{
+                btn.innerHTML="Masquer"
+                p.style.display="none";
+                p.removeAttribute("hidden","");
+            }
+        }
+    </script>
+</body>
+</html>
